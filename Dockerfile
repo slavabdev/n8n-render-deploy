@@ -1,0 +1,13 @@
+FROM n8nio/n8n
+
+ENV N8N_BASIC_AUTH_ACTIVE=true
+ENV N8N_BASIC_AUTH_USER=familybot
+ENV N8N_BASIC_AUTH_PASSWORD=safebudget2025
+ENV N8N_HOST=0.0.0.0
+ENV N8N_PORT=5678
+ENV WEBHOOK_TUNNEL_URL=https://n8n-family-budget.onrender.com
+ENV TZ=Europe/London
+
+EXPOSE 5678
+
+CMD ["n8n"]
