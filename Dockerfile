@@ -18,4 +18,4 @@ RUN rm -rf /home/node/.n8n
 
 EXPOSE 5678
 
-CMD ["tini", "--", "n8n"]
+CMD ["n8n"]
